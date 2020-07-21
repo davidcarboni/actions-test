@@ -5,14 +5,14 @@ on:
     branches: [ master ]
 
 env:
-  environment: dev
-  composed: $environment
+  ee: dev
+  composed: ee
 
 jobs:
 
-  environment:
+  ee:
     runs-on: ubuntu-latest
     env:
-      value: test-${{ env.environment }}
+      value: test-${{ env.ee }}
     steps:
     - run: "echo Value: $value - Environment: $environment"
