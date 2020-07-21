@@ -6,7 +6,7 @@ on:
 
 env:
   ee: dev
-  composed: ee_${{ ee }}
+  composed: ee_${{ env.ee }}
 
 jobs:
 
