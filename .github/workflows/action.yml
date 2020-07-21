@@ -13,6 +13,6 @@ jobs:
   ee:
     runs-on: ubuntu-latest
     env:
-      value: test-${{ env.ee }}
+      value: testing_${{ env.ee }}
     steps:
     - run: "echo Value: $value - Environment: $environment"
