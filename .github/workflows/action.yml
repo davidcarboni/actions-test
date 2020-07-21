@@ -6,7 +6,7 @@ on:
 
 env:
   environment: dev
-  composed: ${{ environment }}
+  composed: $environment
 
 jobs:
 
@@ -15,4 +15,4 @@ jobs:
     env:
       value: test-${{ env.environment }}
     steps:
-    - run: echo $value
+    - run: "echo Value: $value - Environment: $environment"
